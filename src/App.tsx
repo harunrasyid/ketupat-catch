@@ -89,10 +89,11 @@ function App() {
         <h1 className={"greeting"}>Eid Mubarak!</h1>
         <span className={"score"}>Catch Ketupat, Not Your Work Bro </span>
         <h2 className={"score"}>
-          score {score}{" "}
+          score {score} (
           {score < 0
-            ? " Bro You Prioritize Work Over Eid? 😭"
+            ? "Bro You Prioritize Work Over Eid? 😭"
             : "Get that thicc ketupat bro"}
+          )
         </h2>
       </div>
       <Canvas
