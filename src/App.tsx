@@ -19,7 +19,7 @@ function App() {
   const spawnNextObject = () => {
     const isBad = Math.random() > 0.5;
     const objectUrl = isBad ? "/bad.glb" : "/good.glb";
-    const startX = Math.random() * 20 - 10;
+    const startX = Math.random() * (20 - 2 * 3) - (10 - 3);
 
     setNextObject({
       id: Date.now(),
@@ -49,7 +49,7 @@ function App() {
     setTimeout(() => {
       const isBad = Math.random() > 0.5;
       const objectUrl = isBad ? "/bad.glb" : "/good.glb";
-      const startX = Math.random() * 20 - 10;
+      const startX = Math.random() * (20 - 2 * 3) - (10 - 3);
 
       setNextObject({
         id: Date.now(),
@@ -69,7 +69,7 @@ function App() {
     setTimeout(() => {
       const isBad = Math.random() > 0.5;
       const objectUrl = isBad ? "/bad.glb" : "/good.glb";
-      const startX = Math.random() * 20 - 10;
+      const startX = Math.random() * (20 - 2 * 3) - (10 - 3);
 
       setNextObject({
         id: Date.now(),
@@ -89,11 +89,10 @@ function App() {
         <h1 className={"greeting"}>Eid Mubarak!</h1>
         <span className={"score"}>Catch Ketupat, Not Your Work Bro </span>
         <h2 className={"score"}>
-          score {score} (
+          score {score}{" "}
           {score < 0
             ? " Bro You Prioritize Work Over Eid? 😭"
             : "Get that thicc ketupat bro"}
-          )
         </h2>
       </div>
       <Canvas
