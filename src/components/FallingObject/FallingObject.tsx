@@ -9,7 +9,6 @@ export const FallingObject = ({
   onCatch,
   onMiss,
   position,
-  id,
   bad,
   bucketPositionRef,
 }: IFallingObjectProps) => {
@@ -32,7 +31,7 @@ export const FallingObject = ({
     const isTouchingBucket = objectPosition.y < -1.5; // Adjust based on bucket size
 
     if (isWithinBucketX && isTouchingBucket) {
-      onCatch(id, bad);
+      onCatch(bad);
     }
   });
 

@@ -42,7 +42,7 @@ function App() {
     }
   }, [nextObject]);
 
-  const handleCatch = (id: number, bad: boolean) => {
+  const handleCatch = (bad: boolean) => {
     setScore((prev) => prev + (bad ? -1 : 1));
     setFallingObjects([]);
 
