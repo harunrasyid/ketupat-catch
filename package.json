@@ -13,12 +13,14 @@
     "@react-three/drei": "^10.0.5",
     "@react-three/fiber": "^9.1.0",
     "@react-three/postprocessing": "^3.0.4",
+    "@react-three/rapier": "^2.0.0",
     "@types/three": "^0.174.0",
     "postprocessing": "^6.37.1",
     "r3f-perf": "^7.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "three": "^0.174.0",
+    "use-sound": "^5.0.0",
     "vite-tsconfig-paths": "^5.1.4"
   },
   "devDependencies": {
